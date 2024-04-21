@@ -1,0 +1,35 @@
+.home {
+    margin: 10px  50px 10px 50px;
+
+    .card-container {
+        border: none;
+        margin-top: 10px;
+        box-shadow: 0 4px 24px 0 rgba(34, 41, 47, .1);
+
+        .card-body {
+            padding: 5px 0 5px 0;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+    .add-button {
+        float: right;
+    }
+
+    .button-container {
+        display: flex;
+
+        svg {
+            cursor: pointer;
+        }
+        .edit-button {
+            margin-right: 20px;
+        }
+    }
+
+    .plus-icon {
+        margin: 5px 5px 0 5px;
+    }
+}

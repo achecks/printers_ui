@@ -1,0 +1,118 @@
+.react-dataTable {
+    padding-top: 5px;
+    min-width: 300px;
+}
+
+.rdt_TableHeadRow {
+    border-top: none !important;
+}
+
+.react-dataTable .rdt_TableHead .rdt_TableHeadRow {
+    border-color: currentcolor #ebe9f1 #ebe9f1;
+    border-top: 1px solid #ebe9f1;
+    font-size: 18px;
+}
+
+.rdt_TableBody .fmMPL {
+    font-size: 16px !important;
+}
+
+.rdt_TableCol:first-child {
+    min-width: 500px !important;
+}
+
+.rdt_TableCell:first-child {
+    min-width: 500px !important;
+}
+
+.rdt_TableCell:last-child {
+    max-width: 100px;
+}
+
+.rdt_TableCol:last-child {
+    max-width: 100px;
+}
+
+.rdt_TableCell:nth-child(3) {
+    max-width: 300px;
+}
+
+.rdt_TableCol:nth-child(3) {
+    max-width: 300px;
+}
+.rdt_TableCell:nth-child(4) {
+    max-width: 200px;
+}
+
+.rdt_TableCol:nth-child(4) {
+    max-width: 200px;
+}
+.rdt_ExpanderRow {
+    background-color: #F8F8F8;
+}
+
+@media (min-width: 769px) {
+    .rdt_ExpanderRow {
+        display: none !important;
+    }
+}
+
+.rdt_TableRow>div:first-child
+{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    .react-dataTable {
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+    .rdt_TableCol:nth-child(1),
+    .rdt_TableCell:nth-child(1) {
+        display: flex !important;
+    }
+
+    .rdt_TableCol:nth-child(3),
+    .rdt_TableCell:nth-child(3) {
+        display: none !important;
+    }
+
+    .rdt_TableCol:nth-child(4),
+    .rdt_TableCell:nth-child(4) {
+        display: none !important;
+    }
+    .rdt_TableCol:nth-child(5),
+    .rdt_TableCell:nth-child(5) {
+        display: none !important;
+    }
+    .rdt_TableHeadRow>div:first-child,
+    .rdt_TableRow>div:first-child 
+    {
+        visibility: visible;
+    }
+
+    .rdt_TableHeadRow:nth-child(2){
+        min-width: unset !important;
+    }
+    
+    .rdt_TableCol:nth-child(2),
+    .rdt_TableCell:nth-child(2) {
+        display: flex;
+        position: relative;
+        z-index: 1;
+        min-width: unset !important;
+        &:after {
+            content: none;
+        }
+    }
+
+    .rdt_TableRow>div:first-child 
+    {
+        display: flex;
+    }
+}
